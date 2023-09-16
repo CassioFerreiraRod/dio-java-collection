@@ -19,9 +19,10 @@ public class SomaNumeros {
         if (!listaNumeros.isEmpty()) {
             for (Integer numero: listaNumeros){
                 valortotal += numero;
-            }
+            } return valortotal;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        return valortotal;
     }
 
     public int encontrarMaiorNumero() {
@@ -30,9 +31,10 @@ public class SomaNumeros {
             for (Integer numero : listaNumeros) {
                 if (numero > numeroMaior)
                     numeroMaior = numero;
-            }
+            } return numeroMaior;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        return numeroMaior;
     }
 
     public int encontrarMenorNumero() {

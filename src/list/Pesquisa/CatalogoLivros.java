@@ -33,8 +33,10 @@ public class CatalogoLivros {
                 if (livro.getAnoPublicao() >= anoInicial && livro.getAnoPublicao() <= anoFinal)
                     livrosPorAno.add(livro);
             }
+            return livrosPorAno;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        return livrosPorAno;
     }
 
     public Livro pesquisarPorTitulo(String titulo) {
@@ -46,8 +48,11 @@ public class CatalogoLivros {
                     break;
                 }
             }
+            return livroPorTitulo;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        return livroPorTitulo;
+
     }
 
     public static void main(String[] args) {

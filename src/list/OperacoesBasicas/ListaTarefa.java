@@ -24,7 +24,7 @@ public class ListaTarefa {
                 }
             }
         } else {
-            System.out.println("A lista está vazia");
+            throw new RuntimeException("A lista está vazia!");
         }
         tarefaList.removeAll(tarefasParaRemover);
     }
