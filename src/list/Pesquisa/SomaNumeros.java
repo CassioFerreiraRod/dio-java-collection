@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SomaNumeros {
-    List<Integer> listaNumeros;
+    private List<Integer> listaNumeros;
 
     public SomaNumeros() {
         listaNumeros = new ArrayList<>();
