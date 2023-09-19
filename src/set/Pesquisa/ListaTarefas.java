@@ -1,10 +1,7 @@
-package Set.Pesquisa;
-
-import list.OperacoesBasicas.ListaTarefa;
+package set.Pesquisa;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.SortedMap;
 
 public class ListaTarefas {
     Set<Tarefa> tarefaSet;
